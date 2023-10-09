@@ -1,0 +1,38 @@
+#Question 1
+#Alina Avramenko
+taylorSwiftSongs =['Love Story','Shake It Off','Delicate','Wildest Dreams','All Too Well','Blank Space','Bad Blood','You Belong With Me','Red','22']
+#This line is to make a list of Taylor Swift Songs
+print(taylorSwiftSongs)
+#Thus line is for printing the list of Taylor Swift Songs
+
+song = int(input("Please enter your favourite Taylor Swift song:"))
+#Song here is variable and ths line is asking the user to enter his/her favourite Talor Swift's Song
+print(len(taylorSwiftSongs))
+#This line is counting the amount of elements in the list and printing its amount
+
+
+if song = taylorSwiftSongs:
+    print("This song is in the list")
+else :
+    print("This song is not in the list")
+
+
+
+#Question 2
+#Alina Avramenko
+
+print("Welcome to Temperature Alert System")
+#This line is to welcome the user of Temperature Alert System.
+temperature = int(input("Please enter temperature value in degree Celsius :"))
+#Temperature is our varaible which we will use then . This line is to ask the user to input temperature value in degree Celcius and then use it for giving the user advice what to do with heating. 
+if temperature < 20 :
+    #This line is setting the condition, that if variable  less then twenty the programm will follow this condition.  
+    print("Too cold. Turn up heating")
+    #If the previous condition is true (if temperature is less then 20)it will print that is too cold. 
+elif 20 < temperature < 40 :
+    #This line is setting the condition , if the variable(temperature)  between 20 and 40 it will follow this condition. 
+    print("Temperature is just right")
+    #If the previous ondition is true (if temperature between 20 and 40) It will print that temperature is right.
+else :
+    print("Too warm. Turn down heating")
+    #This line is setting the condition, if the variable (temperature) more than 40 it will print that it is too warm.
