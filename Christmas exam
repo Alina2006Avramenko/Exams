@@ -1,0 +1,50 @@
+#Alina Avramenko
+#Question 1
+#This calculator can only add and subtract 
+name = input("Please enter your name : ")# This line is asking the user his/her name and it is a variable
+print("Hello",name,".\n Welcome to the addition and subtraction calculator")#This line is greating the user and using his name and it tells the user of this calculator that it can only add two numbers or subtract them
+
+num1 = int(input("Enter the first number : "))# This line of code is made to ask the user enetr the first number which wants to add or subtract
+num2 = int(input("Enter the second number : "))#This line of code is made to ask the user enetr the second number which wants to add or subtract
+
+print('Do you want me to (a)dd or (s)ubtract?')#This line is asking the user about an operation which want to do woth this two numbers
+choice = input()
+
+
+if choice == 'a' or choice == 'A' :#If the user will input the letter a (upper or lower case) it will add them 
+    print (num1 ,"+", num2 ,"=" ,num1 + num2)#This line is printing the answer after the calculator added the numbers
+elif choice == 's' or choice == 'S':#If the user will input the letter s (upper or lower case) it will subtract them 
+    print (num1,"-" , num2, "=" ,num1 - num2)#This line is printing the answer after the calculator subtracted the numbers
+else:
+    print("Invalid option")# Thisline will display if the user entered any other latter (not a os s)
+    
+    while choice != 'a' or choice != 'A' or choice != 's' or choice != 'S':#This is the loop which starts working if the user input any other letter(Not a not A and not s not S) and it asks the user to input the letter again to do the addition or subtraction
+        print('Do you want me to (a)dd or (s)ubtract?')#This line is asking the user about an operation which want to do woth this two numbers
+        choice = input()
+        
+        if choice == 'a' or choice == 'A' :#If the user will input the letter a (upper or lower case) it will add them
+            print (num1 ,"+", num2 ,"=" ,num1 + num2)#This line is printing the answer after the calculator added the numbers
+        elif choice == 's' or choice == 'S':#If the user will input the letter s (upper or lower case) it will subtract them
+            print (num1,"-" , num2, "=" ,num1 - num2)#This line is printing the answer after the calculator subtracted the numbers
+        else:
+            print("Invalid option")# Thisline will display if the user entered any other latter (not a os s)
+        break     
+
+
+
+#Alina Avramenko
+#Question 2
+newnumber = ()#This is the variable for the loop
+squared_numbers = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]# This line is the list if numbers which will be transfered into its squares
+for x in squared_numbers :#This is the loop
+    i = 0#Index is equal to 0
+    newnumber == squared_numbers[i]*squared_numbers[i] #Taking the number from the list squaring it
+    i+=1
+    squared_numbers.append(newnumber)
+print (squared_numbers)
+
+users_number = int(input("Which squared number will I display(1-20) ? :"))#This is the variable which is asking the user enter the number which he wants to be squared
+print(users_number * users_number) #This line is suaring the which the users entered 
+
+
+
