@@ -1,0 +1,30 @@
+#Question 1
+#Student Name: Alina Avramenko
+
+print("Welcome to the driving licence eligibility checker")# this line of code welcomes the user and let him/her now what does this program do
+name = input("What is your name?")#this line creates a variable "name" and asks the user to enter his/her name and then "name" will be equal to the word that the user has entered 
+age=int(input("What age are you?"))#this line creates a variable "age" and asks the user to enter his/her age and then "age" will be equal to the number that the user has entered 
+print("You entered ", age)# this line print user's age <using information from variable "age"
+if (age <17):#if statement compares "age" to 17
+    print(name,"you are not entitled to apply for a driving licence.") #if it is less than 17 it prints that user is not entitled to apply for a driving licence
+elif (age >=17 and age <=74):#if statement compares "age" to 17 and 74
+    print(name,"you are entitled to apply for a driving licence.")#if it is greater  or equal to 17 and less than or equal to 74 it prints that user is entitled to apply for a driving licence
+else:#if statement compares "age" to 74
+    print(name,"you are entitled to apply for a three-year driving licence.")#if it is greater than 74 it prints that user is entitled to apply for a three year driving licence
+
+
+
+#Question 2
+#Student Name: Alina Avramenko
+import random
+
+number = random.randint(1,50)#the variable "number" is created and it is equal to any random number beteen 1 and 50
+while ( True):# while loop is created and it will work until it is true
+    guess = int(input("Enter any number and try to guess mine : "))#the variable "guess" is created and the program ask the user to enter his/her guess
+    if (guess > number ):#compares "guess" and "number" 
+        print("Your number is too high")#if "guess" is greater than "number" than the user will get a hint that his number is too high
+    elif (guess < number) :#compares "guess" and "number" 
+        print("Your number is too low")#if "guess" is less than "number" than the user will get a hint that his number is too low
+    else :#compares "guess" and "number" 
+        print("Well done, you won! My number was :",number )#if the user guessed the number right and "guess" is equal to "number" than the user will get the message that he won and the loop will break
+        break
